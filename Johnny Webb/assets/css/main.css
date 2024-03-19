@@ -6529,3 +6529,10 @@ input, textarea{
 
 
 }
+
+.play-button {
+    width: 15px;
+    height: 15px;
+    background-color: chocolate; /* Example color */
+    border-radius: 3%; /* To make it round */
+}
