@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="assets/icon-fonts/remixicon/remixicon.css"> 
 
      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/amplitudejs@{{3.2.1}}/dist/amplitude.js"></script> 
+    
 
 
 </head>
@@ -160,6 +161,8 @@
                     <div class="row gx-3">
                         <div class="col-4 align-right"><div class="prev amplitude-prev"><i class="fa-solid fa-backward-fast"></i></div></div>
                         <div class="col-4 align-center"> <div class="play-pause amplitude-play-pause"></div></div>
+                        <span class="button amplitude-play-pause amplitude-paused" amplitude-playlist-main-play-pause="true" amplitude-playlist="{index}"></span> //Play pause button
+
                         <div class="col-4 align-left"><div class="next amplitude-next"><i class="fa-solid fa-forward-fast"></i></div></div>
                         
                     </div>
