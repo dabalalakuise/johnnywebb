@@ -40,11 +40,14 @@ body:after{
 }
 
 body{
-    font-family: 'Tilt Prism', sans-serif;
+	 font-family: "Tourney", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
     background: var(--black);
     margin: 0;
-	font-optical-sizing: auto;
-  font-weight: 400;
   font-style: normal;
   font-variation-settings:
     "XROT" 0,
@@ -6536,14 +6539,3 @@ input, textarea{
 
 }
 
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900
-
-.tourney-<uniquifier> {
-  font-family: "Tourney", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
