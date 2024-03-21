@@ -40,19 +40,18 @@ body:after{
 }
 
 body{
-	 font-family: "Tourney", sans-serif;
+// <uniquifier>: Use a unique and descriptive class name
+
+.honk-<uniquifier> {
+  font-family: "Honk", system-ui;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 400;
   font-style: normal;
   font-variation-settings:
-    "wdth" 100;
-    background: var(--black);
-    margin: 0;
-  font-style: normal;
-  font-variation-settings:
-    "XROT" 0,
-    "YROT" 0;
+    "MORF" 15,
+    "SHLN" 50;
 }
+  
 
 .container{
     box-sizing: border-box;
