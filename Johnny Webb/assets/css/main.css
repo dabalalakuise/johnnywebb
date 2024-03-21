@@ -40,9 +40,6 @@ body:after{
 }
 
 body{
-// <uniquifier>: Use a unique and descriptive class name
-
-.honk-<uniquifier> {
   font-family: "Honk", system-ui;
   font-optical-sizing: auto;
   font-weight: 400;
