@@ -1,5 +1,19 @@
-<IfModule mod_rewrite.c>
 # Enable Rewrite Engine
 RewriteEngine On
-RewriteBase /
-</IfModule>
+
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Remove index.php from URL
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+RewriteRule ^index\.php$ https://%{HTTP_HOST}/ [R=301,L]
+
+# Remove trailing slash from URL
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+# Rewrite non-existent files to index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L]
