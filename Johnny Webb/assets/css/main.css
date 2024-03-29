@@ -17,13 +17,16 @@ a{
     text-decoration: none;
 }
 
-body.fadeOutDown:after{
+body .englebert-regular{
     opacity: 1;
     transition: all ease .5s;
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     -ms-transition: all ease .5s;
     -o-transition: all ease .5s;
+	font-family: "Englebert", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body:after{
